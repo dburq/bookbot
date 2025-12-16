@@ -19,7 +19,7 @@ def main():
     
     
     print("============ BOOKBOT ============")
-    print("Analyzing book found at books/frankenstein.txt...")
+    print(f"Analyzing book found at {sys.argv[1]}...")
     print("----------- Word Count ----------")
     
     print(f"Found {total_words} total words\n--------- Character Count -------")
@@ -30,4 +30,5 @@ def main():
     
     print("============= END ===============")
 
-main()
+if __name__ == "__main__":
+    main()
